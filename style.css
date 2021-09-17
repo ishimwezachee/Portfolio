@@ -27,9 +27,11 @@ hr {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: #ebf0ee;
   text-align: center;
-  border: 2px solid #ebf0ee;
+  border: 2px solid hsl(156, 14%, 93%);
   border-radius: 10px;
 }
 
@@ -128,4 +130,43 @@ button#html{
   font-weight: 300;
   font-size: 17px;
   margin-bottom: 24px;
+}
+
+button:hover {
+ opacity: 0.6;
+}
+
+.text-img{
+ display: flex;
+ align-items:flex-end;
+ justify-content: space-between;
+ padding-top: 38px;
+ padding-bottom: 24px;
+ margin-bottom: 0;
+}
+.about-head{
+  padding-left: 50px;
+}
+
+#description{
+  text-align: center;
+  font-size: 28px;
+  font-family: Inter, sans-serif;
+}
+.resume{
+  text-align: center;
+}
+button.btn-resume{
+  width: 159px;
+  height: 48px;
+  border: none;
+  border-radius:4px;
+  background-color:#36B37F;
+  color: white;
+  font-size: 17px;
+  font-family: Inter, sans-serif;
+  margin-top: 24px;
+  margin-bottom: 59px;
+  font-weight: 500;
+
 }
