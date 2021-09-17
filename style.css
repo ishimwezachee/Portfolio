@@ -60,7 +60,7 @@ h2 {
   margin-bottom: 29px;
 }
 
-#ruby {
+.ruby {
   width: 103px;
   height: 32px;
   border-radius: 4px;
@@ -71,7 +71,7 @@ h2 {
   font-weight: 600;
 }
 
-#css {
+.css {
   width: 45px;
   height: 32px;
   border-radius: 4px;
@@ -82,7 +82,7 @@ h2 {
   font-weight: 600;
 }
 
-#js {
+.js {
   width: 82px;
   height: 32px;
   border-radius: 4px;
@@ -93,7 +93,7 @@ h2 {
   font-weight: 600;
 }
 
-button#html {
+.html {
   width: 51px;
   height: 32px;
   border-radius: 4px;
@@ -178,14 +178,14 @@ button:hover {
   text-align: center;
 }
 
-#icon_language {
+.icon_language {
   width: 80px;
   height: 80px;
   margin-bottom: 30px;
   margin-top: 40px;
 }
 
-#language {
+.language {
   color: #344563;
   font-family: Inter, sans-serif;
   font-weight: 600;
