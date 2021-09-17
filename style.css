@@ -7,9 +7,6 @@ h1 {
   text-align: center;
   margin: 2px;
 }
-h2 {
-  margin: 2px;
-}
 
 hr {
   width: 48px;
@@ -21,9 +18,8 @@ hr {
   display: grid;
   grid-template-columns: 90%;
   justify-content: center;
-  grid-column-gap: 50px;
   grid-gap: 30px;
-  margin-top:62px;
+  margin-top: 62px;
 }
 
 .card {
@@ -50,81 +46,70 @@ h2 {
   font-family: Inter, sans-serif;
   font-weight: 650;
   margin: 4px;
+  margin: 2px;
 }
 
-.intro{
+.intro {
   margin: 16px;
   padding-top: 16px;
 }
 
-.btn{
+.btn {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 29px;
 }
 
-button#ruby{
+#ruby {
   width: 103px;
   height: 32px;
   border-radius: 4px;
-  background-color:#EBF0EE;
+  background-color: #ebf0ee;
   border: none;
-  color:#3A4A42;
+  color: #3a4a42;
   font-family: Inter, sans-serif;
   font-weight: 600;
 }
 
-button#ruby{
-  width: 103px;
-  height: 32px;
-  border-radius: 4px;
-  background-color:#EBF0EE;
-  border: none;
-  color:#3A4A42;
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-}
-
-button#css{
+#css {
   width: 45px;
   height: 32px;
   border-radius: 4px;
-  background-color:#EBF0EE;
+  background-color: #ebf0ee;
   border: none;
-  color:#3A4A42;
+  color: #3a4a42;
   font-family: Inter, sans-serif;
   font-weight: 600;
 }
 
-button#js{
+#js {
   width: 82px;
   height: 32px;
   border-radius: 4px;
-  background-color:#EBF0EE;
+  background-color: #ebf0ee;
   border: none;
-  color:#3A4A42;
+  color: #3a4a42;
   font-family: Inter, sans-serif;
   font-weight: 600;
 }
 
-
-button#html{
+button#html {
   width: 51px;
   height: 32px;
   border-radius: 4px;
-  background-color:#EBF0EE;
+  background-color: #ebf0ee;
   border: none;
-  color:#3A4A42;
+  color: #3a4a42;
   font-family: Inter, sans-serif;
   font-weight: 600;
 }
 
-.btn-project{
+.btn-project {
   width: 122px;
   height: 48px;
   border: none;
   border-radius: 4px;
-  background-color:#36B37F;
+  background-color: #36b37f;
   color: white;
   font-family: Inter, sans-serif;
   font-weight: 300;
@@ -133,40 +118,191 @@ button#html{
 }
 
 button:hover {
- opacity: 0.6;
+  opacity: 0.6;
 }
 
-.text-img{
- display: flex;
- align-items:flex-end;
- justify-content: space-between;
- padding-top: 38px;
- padding-bottom: 24px;
- margin-bottom: 0;
+.text-img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 24px;
+  margin-bottom: 0;
 }
-.about-head{
+
+.about-head {
   padding-left: 50px;
+  font-size: 40px;
 }
 
-#description{
+#description {
   text-align: center;
-  font-size: 28px;
+  font-size: 22px;
   font-family: Inter, sans-serif;
 }
-.resume{
+
+.resume,
+.touch {
   text-align: center;
 }
-button.btn-resume{
+
+.btn-resume,
+.get-touch {
   width: 159px;
   height: 48px;
   border: none;
-  border-radius:4px;
-  background-color:#36B37F;
+  border-radius: 4px;
+  background-color: #36b37f;
   color: white;
   font-size: 17px;
   font-family: Inter, sans-serif;
   margin-top: 24px;
   margin-bottom: 59px;
   font-weight: 500;
+}
 
+.about-cards {
+  display: grid;
+  grid-template-columns: 90%;
+  justify-content: center;
+  grid-gap: 24px;
+}
+
+.about-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #c1c7d0;
+  background-color: #ebf0ee;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#icon_language {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+#language {
+  color: #344563;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.languages-list {
+  display: flex;
+  list-style: none;
+  color: #36b37e;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0;
+  padding-bottom: 72px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#jvscr,
+#rub,
+#htm,
+#cs {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-left: 8px;
+}
+
+#bstrap,
+#rub-rails,
+#spec,
+#capy,
+#sel {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+#codekit,
+#Github,
+#codepn,
+#gitlab,
+#terminal {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.glad-text {
+  width: 90%;
+  margin: auto;
+}
+
+p#texts {
+  text-align: center;
+  margin-top: 34px;
+  font-size: 38px;
+  font-family: Inter, sans-serif;
+  color: #172b4d;
+  font-weight: bold;
+}
+
+.inputs {
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  height: 48px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #d0d9d4;
+  margin-bottom: 24px;
+  font-family: Inter, sans-serif;
+}
+
+textarea {
+  width: 90%;
+  height: 114px;
+  outline: none;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
+  color: black;
+}
+
+ul.font-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.fab,
+.far {
+  font-size: 20px;
+  color: #505f79;
+  margin: 10px;
+}
+
+.get-touch {
+  margin-bottom: 40px;
+}
+
+.email-me {
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  color: #42526e;
+  margin-bottom: 200px;
+}
+
+.blck-line {
+  width: 90px;
+  background-color: black;
+  height: 3px;
 }
