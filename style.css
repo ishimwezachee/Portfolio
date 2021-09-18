@@ -92,7 +92,7 @@ hr {
   height: 3px;
 }
 
-#project-cards {
+.project-cards {
   display: grid;
   grid-template-columns: 90%;
   justify-content: center;
@@ -130,10 +130,7 @@ hr {
   background-color: #ffff;
 }
 
-.ruby,
-.css,
-.js,
-.html {
+.language-btn {
   background-color: #ebf0ee;
   color: #3a4a42;
   padding: 8px 12px;
@@ -259,33 +256,7 @@ button:hover {
   justify-content: center;
 }
 
-#jvscr,
-#rub,
-#htm,
-#cs {
-  background-color: white;
-  padding: 12px;
-  border-radius: 8px;
-  margin-left: 8px;
-}
-
-#bstrap,
-#rub-rails,
-#spec,
-#capy,
-#sel {
-  background-color: white;
-  padding: 12px;
-  border-radius: 8px;
-  margin-left: 8px;
-  margin-bottom: 8px;
-}
-
-#codekit,
-#Github,
-#codepn,
-#gitlab,
-#terminal {
+.programing-lang {
   background-color: white;
   padding: 12px;
   border-radius: 8px;
@@ -298,7 +269,7 @@ button:hover {
   margin: auto;
 }
 
-p#texts {
+#texts {
   text-align: center;
   margin-top: 34px;
   font-size: 38px;
