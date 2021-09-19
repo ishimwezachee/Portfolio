@@ -96,7 +96,7 @@ hr {
   display: grid;
   grid-template-columns: 90%;
   justify-content: center;
-  grid-gap: 30px;
+  grid-row-gap: 30px;
   margin-top: 62px;
   padding: 0;
   list-style: none;
