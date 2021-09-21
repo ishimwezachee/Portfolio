@@ -243,15 +243,19 @@
         </p>
       </div>
       <div class="inputs">
-        <div>
-          <input type="text" placeholder="Full name" />
-        </div>
-        <div>
-          <input type="email" placeholder="Email address" />
-        </div>
-        <div>
-          <textarea placeholder="Enter text here"></textarea>
-        </div>
+        <form action="https://formspree.io/f/xqkwngbb" method="post">
+          <ul class="input-form">
+            <li>
+              <input type="text" required placeholder="Full name" max="30" />
+            </li>
+            <li>
+              <input type="email" required placeholder="Email address" />
+            </li>
+            <div>
+              <textarea placeholder="Enter text here"></textarea>
+            </div>
+          </ul>
+        </form>
       </div>
       <div class="touch">
         <button type="button" class="get-touch">Get in touch</button>
