@@ -246,17 +246,35 @@
         <form action="https://formspree.io/f/xqkwngbb" method="post">
           <ul class="input-form">
             <li>
-              <input type="text" required placeholder="Full name" max="30" />
+              <input
+                type="text"
+                required
+                placeholder="Full name"
+                max="30"
+                name="name"
+              />
             </li>
             <li>
-              <input type="email" required placeholder="Email address" />
+              <input
+                type="email"
+                required
+                placeholder="Email address"
+                name="email"
+              />
             </li>
-            <li> <textarea maxlength="500" placeholder="Enter text here"  required></textarea></li>
+            <li>
+              <textarea
+                maxlength="500"
+                placeholder="Enter text here"
+                required
+                name="text"
+              ></textarea>
+            </li>
+            <li>
+              <button type="submit" class="get-touch">Get in touch</button>
+            </li>
           </ul>
         </form>
-      </div>
-      <div class="touch">
-        <button type="button" class="get-touch">Get in touch</button>
       </div>
     </section>
     <footer>

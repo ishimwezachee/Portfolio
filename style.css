@@ -328,9 +328,8 @@ ul.font-icons {
   height: 3px;
 }
 
-.input-form { 
-  display: flex; 
-  flex-direction: column; 
+.input-form {
+  display: flex;
+  flex-direction: column;
   padding-left: 5px;
-
-} 
+}
