@@ -243,19 +243,41 @@
         </p>
       </div>
       <div class="inputs">
-        <div>
-          <input type="text" placeholder="Full name" />
-        </div>
-        <div>
-          <input type="email" placeholder="Email address" />
-        </div>
-        <div>
-          <textarea placeholder="Enter text here"></textarea>
-        </div>
+        <form action="https://formspree.io/f/xqkwngbb" method="post">
+          <ul class="input-form">
+            <li>
+              <input
+                type="text"
+                required
+                placeholder="Full name"
+                maxlength="30"
+                name="name"
+              />
+            </li>
+            <li>
+              <input
+                type="email"
+                required
+                placeholder="Email address"
+                name="email"
+              />
+            </li>
+            <li>
+              <textarea
+                maxlength="500"
+                placeholder="Enter text here"
+                required
+                name="text"
+              ></textarea>
+            </li>
+            <li>
+              <button type="submit" class="get-touch">Get in touch</button>
+            </li>
+          </ul>
+        </form>
       </div>
-      <div class="touch">
-        <button type="button" class="get-touch">Get in touch</button>
-      </div>
+    </section>
+    <footer>
       <div class="icons">
         <ul class="font-icons">
           <li>
@@ -289,6 +311,6 @@
         <p class="email-me">zacheeishimwe@gmail.com</p>
       </div>
       <hr class="blck-line" />
-    </section>
+    </footer>
   </body>
 </html>
