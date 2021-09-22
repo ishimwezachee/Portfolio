@@ -5,7 +5,7 @@
   padding: 10px;
 }
 
-.desktop-nav{
+.desktop-nav {
   display: none;
 }
 
@@ -121,8 +121,9 @@ hr {
 
 .img_container {
   width: 100%;
-  height: 242px;
-  background-color: #ebf0ee;
+  height: 252px;
+  /* background-color: #ebf0ee; */
+  background-color: red;
 }
 
 .btn {
@@ -157,7 +158,6 @@ h2 {
 
 .intro {
   margin: 16px;
-  padding-top: 16px;
 }
 
 .btn-project {
@@ -342,9 +342,8 @@ ul.font-icons {
   padding-left: 5px;
 }
 
-
 @media only screen and (min-width: 600px) {
-  body{
+  body {
     /* background-color: red; */
   }
 
@@ -357,51 +356,87 @@ ul.font-icons {
     height: 1040px;
   }
 
-  .project-cards{
-    margin: 200px;
-    margin-right: 200px;
-  }
-
   .project-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 20px 14%;
   }
 
-   .mobile-nav{
-     display: none;
-   }
+  .mobile-nav {
+    display: none;
+  }
 
-  .desktop-nav{
+  .desktop-nav {
     display: block;
     text-align: center;
   }
 
-  .top-nav{
+  .top-nav {
     color: #344563;
     font-size: 15px;
-    font-family: Inter, sans-serif; 
+    font-family: Inter, sans-serif;
     font-weight: 600;
     padding-left: 30px;
   }
 
-  .name {
-     font-size: 48px;
+  #head-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
   }
-  .title{
+
+  .name {
+    font-size: 48px;
+  }
+
+  .title {
     font-size: 45px;
   }
-   .description{
-     padding-left: 22%;
-     padding-right: 22%;
-   }
 
-   .center {
+  .description {
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+
+  .center {
     position: absolute;
-    top: 40%;
+    top: 35%;
   }
 
   .disable {
-   display: none;
+    display: none;
   }
-} 
+
+  hr {
+    display: none;
+  }
+
+  .language-btn {
+    font-size: 10px;
+  }
+
+  .btn-project {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0 25px;
+  }
+
+  .img_container {
+    height: 200px;
+    background-color: #ebf0ee;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+  }
+
+}
