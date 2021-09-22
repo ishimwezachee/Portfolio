@@ -1,8 +1,12 @@
-#head-nav {
+.mobile-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+
+.desktop-nav{
+  display: none;
 }
 
 #logo {
@@ -364,4 +368,40 @@ ul.font-icons {
     justify-content: space-evenly;
   }
 
+   .mobile-nav{
+     display: none;
+   }
+
+  .desktop-nav{
+    display: block;
+    text-align: center;
+  }
+
+  .top-nav{
+    color: #344563;
+    font-size: 15px;
+    font-family: Inter, sans-serif; 
+    font-weight: 600;
+    padding-left: 30px;
+  }
+
+  .name {
+     font-size: 48px;
+  }
+  .title{
+    font-size: 45px;
+  }
+   .description{
+     padding-left: 22%;
+     padding-right: 22%;
+   }
+
+   .center {
+    position: absolute;
+    top: 40%;
+  }
+
+  .disable {
+   display: none;
+  }
 } 
