@@ -22,8 +22,12 @@
 }
 
 .subHead {
+  background-image: url("./images/header-illsutration-mobile@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 700px;
 }
 
 .center {
