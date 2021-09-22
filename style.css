@@ -177,18 +177,19 @@ button:hover {
   opacity: 0.6;
 }
 
-.text-img {
+/* .text-img {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding-top: 38px;
   padding-bottom: 24px;
   margin-bottom: 0;
-}
+} */
 
 .about-head {
   padding-left: 50px;
   font-size: 40px;
+  text-align: center;
 }
 
 #description {
@@ -393,11 +394,13 @@ ul.font-icons {
 
   .title {
     font-size: 45px;
+    margin-bottom: 20px;
   }
 
   .description {
     padding-left: 22%;
     padding-right: 22%;
+    padding-bottom: 2%;
   }
 
   .center {
@@ -437,6 +440,12 @@ ul.font-icons {
 
   .btn {
     margin-bottom: 20px;
+  }
+
+  .text{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
 }
