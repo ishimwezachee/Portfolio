@@ -263,7 +263,6 @@ button:hover {
   margin-bottom: 8px;
 }
 
-
 #texts {
   width: 90%;
   margin: auto;
@@ -332,16 +331,6 @@ ul.font-icons {
 }
 
 @media only screen and (min-width: 600px) {
-  .about-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid #c1c7d0;
-    background-color: #ebf0ee;
-    border-radius: 8px;
-    text-align: center;
-  }
-
   .subHead {
     background-image: url("./images/Header-llustration-desktop@2x.png");
     background-position: center;
@@ -366,8 +355,8 @@ ul.font-icons {
   }
 
   .about-card {
-    width: 50%;
     padding: 1px 25px;
+    width: 50%;
   }
 
   .mobile-nav {
@@ -453,26 +442,21 @@ ul.font-icons {
     padding-left: 20%;
     padding-right: 20%;
   }
-
-
-
-
 }
 
 @media only screen and (min-width: 768px) {
-
-  .text-input{
-    display:flex;
+  .text-input {
+    display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     margin-top: 50px;
   }
-  
-  .inputs{
+
+  .inputs {
     width: 100%;
     text-align: left;
-
   }
+
   .project-cards {
     margin: 20px 5%;
   }
