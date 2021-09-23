@@ -1,8 +1,12 @@
-#head-nav {
+.mobile-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 #logo {
@@ -22,8 +26,12 @@
 }
 
 .subHead {
+  background-image: url("./images/header-illsutration-mobile@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 700px;
 }
 
 .center {
@@ -113,7 +121,7 @@ hr {
 
 .img_container {
   width: 100%;
-  height: 242px;
+  height: 252px;
   background-color: #ebf0ee;
 }
 
@@ -149,7 +157,6 @@ h2 {
 
 .intro {
   margin: 16px;
-  padding-top: 16px;
 }
 
 .btn-project {
@@ -169,18 +176,10 @@ button:hover {
   opacity: 0.6;
 }
 
-.text-img {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding-top: 38px;
-  padding-bottom: 24px;
-  margin-bottom: 0;
-}
-
 .about-head {
   padding-left: 50px;
   font-size: 40px;
+  text-align: center;
 }
 
 #description {
@@ -264,12 +263,9 @@ button:hover {
   margin-bottom: 8px;
 }
 
-.glad-text {
+#texts {
   width: 90%;
   margin: auto;
-}
-
-#texts {
   text-align: center;
   margin-top: 34px;
   font-size: 38px;
@@ -332,4 +328,168 @@ ul.font-icons {
   display: flex;
   flex-direction: column;
   padding-left: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .subHead {
+    background-image: url("./images/Header-llustration-desktop@2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1040px;
+  }
+
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0;
+  }
+
+  .about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2px 5%;
+  }
+
+  .about-card {
+    padding: 1px 25px;
+    width: 50%;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .top-nav {
+    color: #344563;
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    padding-left: 30px;
+  }
+
+  #head-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .name {
+    font-size: 48px;
+  }
+
+  .title {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-bottom: 2%;
+  }
+
+  .center {
+    position: absolute;
+    top: 35%;
+  }
+
+  .disable {
+    display: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .language-btn {
+    font-size: 10px;
+  }
+
+  .btn-project {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0 25px;
+  }
+
+  .img_container {
+    height: 200px;
+    background-color: #ebf0ee;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+  }
+
+  .text {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+
+  .inputs {
+    width: 100%;
+    text-align: left;
+  }
+
+  .project-cards {
+    margin: 20px 5%;
+  }
+
+  .about-card {
+    width: 40%;
+  }
+
+  .intro {
+    padding: 0 30px;
+  }
+
+  .email-me {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-card {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .project-cards {
+    margin: 20px 6%;
+  }
+
+  .intro {
+    padding: 0 40px;
+  }
+
+  .about-card {
+    width: 22%;
+  }
 }
