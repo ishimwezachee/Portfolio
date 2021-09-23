@@ -176,15 +176,6 @@ button:hover {
   opacity: 0.6;
 }
 
-/* .text-img {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding-top: 38px;
-  padding-bottom: 24px;
-  margin-bottom: 0;
-} */
-
 .about-head {
   padding-left: 50px;
   font-size: 40px;
@@ -272,12 +263,10 @@ button:hover {
   margin-bottom: 8px;
 }
 
-.glad-text {
-  width: 90%;
-  margin: auto;
-}
 
 #texts {
+  width: 90%;
+  margin: auto;
   text-align: center;
   margin-top: 34px;
   font-size: 38px;
@@ -343,6 +332,16 @@ ul.font-icons {
 }
 
 @media only screen and (min-width: 600px) {
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #c1c7d0;
+    background-color: #ebf0ee;
+    border-radius: 8px;
+    text-align: center;
+  }
+
   .subHead {
     background-image: url("./images/Header-llustration-desktop@2x.png");
     background-position: center;
@@ -357,6 +356,18 @@ ul.font-icons {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 20px 0;
+  }
+
+  .about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2px 5%;
+  }
+
+  .about-card {
+    width: 50%;
+    padding: 1px 25px;
   }
 
   .mobile-nav {
@@ -442,15 +453,42 @@ ul.font-icons {
     padding-left: 20%;
     padding-right: 20%;
   }
+
+
+
+
 }
 
 @media only screen and (min-width: 768px) {
+
+  .text-input{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  
+  .inputs{
+    width: 100%;
+    text-align: left;
+
+  }
   .project-cards {
     margin: 20px 5%;
   }
 
+  .about-card {
+    width: 40%;
+  }
+
   .intro {
     padding: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-card {
+    width: 25%;
   }
 }
 
@@ -462,5 +500,8 @@ ul.font-icons {
   .intro {
     padding: 0 40px;
   }
-  
+
+  .about-card {
+    width: 22%;
+  }
 }
