@@ -468,6 +468,10 @@ ul.font-icons {
   .intro {
     padding: 0 30px;
   }
+
+  .email-me {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
