@@ -225,6 +225,11 @@ button:hover {
   background-color: #ebf0ee;
   border-radius: 8px;
   text-align: center;
+  transition: width 1s;
+}
+
+.about-card{
+  width: 25%;
 }
 
 .icon_language {
