@@ -113,7 +113,7 @@ hr {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #ebf0ee;
+  background-color: white;
   text-align: center;
   border: 2px solid hsl(156, 14%, 93%);
   border-radius: 10px;
@@ -157,6 +157,13 @@ h2 {
 
 .intro {
   margin: 16px;
+  transition: font-zize 5s;
+}
+
+.card:hover {
+  font-size: 15px;
+  border: 2px solid white;
+  border-bottom: 4px solid #a6c9bd;
 }
 
 .btn-project {
@@ -228,7 +235,7 @@ button:hover {
   transition: width 1s;
 }
 
-.about-card{
+.about-card:hover {
   width: 25%;
 }
 
@@ -406,11 +413,11 @@ ul.font-icons {
   .center {
     position: absolute;
     top: 35%;
-    transition:  transform 2s;
+    transition: transform 2s;
   }
-  
-  .center:hover{
-    transform:rotate(-360deg);
+
+  .center:hover {
+    transform: rotate(-360deg);
   }
 
   .disable {
