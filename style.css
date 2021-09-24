@@ -401,6 +401,11 @@ ul.font-icons {
   .center {
     position: absolute;
     top: 35%;
+    transition:  transform 2s;
+  }
+  
+  .center:hover{
+    transform:rotate(-360deg);
   }
 
   .disable {
