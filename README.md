@@ -1,14 +1,24 @@
 
 # My projects and about section 
 
-> This the parts of protofolio which contain my project section
-> about section and contact me. It is a mobile responsive web but 
-> not desktop responsive. 
+> This is my portfolio website and it is both mobile and Desktop responsive. 
+> It contain my describtion, projects, skills and framework and my contacts.
+
+
+Desktop view                                      |  Mobile Header view
+:------------------------------------------------:|:-----------------------------------------------:
+![](./images/portofolio.PNG)                     |  ![](./images/portfolio-mobile.PNG)
+
 
 ## Built With
 
 - HTML 
 - CSS
+
+## Project link
+
+[Site Link](https://ishimwezachee.github.io/Portfolio/)
+
 
 ## Getting Started
 To get a local copy, just follow the steps That I am going to mention bellow:
@@ -18,7 +28,7 @@ To get a local copy, just follow the steps That I am going to mention bellow:
 ### Setup
 To get this project in your local machine, follow these steps:
 - Open terminal 
-- clone the repository :https://github.com/ishimwezachee/portofolio-project-section.git
+- clone the repository :https://github.com/ishimwezachee/Portfolio.git
 - Cd in the project folder
 - run the project in your browser
 
@@ -36,6 +46,16 @@ To get this project in your local machine, follow these steps:
 - GitHub: [@zacheeIshimwe](https://github.com/ishimwezachee)
 - LinkedIn: [@zacheeIshimwe](https://www.linkedin.com/in/zachee-ishimwe-ab952a119/)
 
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
 
 ## 📝 License
 
