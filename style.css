@@ -9,9 +9,10 @@ body{
   padding-top: 0;
 }
 
-/* .desktop-nav {
+.desktop-nav {
   display: none;
-} */
+}
+
 .top-nav{
   margin-left: 28px;
 }
