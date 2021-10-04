@@ -4,11 +4,41 @@
   align-items: center;
   padding: 10px;
 }
-
-.desktop-nav {
-  display: none;
+body{
+  margin-top: 0;
+  padding-top: 0;
 }
 
+/* .desktop-nav {
+  display: none;
+} */
+.top-nav{
+  margin-left: 28px;
+}
+.column{
+  position: fixed;
+  right:0;
+  top:0;
+  left:0;
+  bottom: 44px;
+  background-color: white;
+  flex-direction: column;
+  color: white;
+  z-index: 99;
+  margin:0;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.column .close-menu{
+align-self:end;
+}
+
+.nav-link{
+  text-decoration: none;
+}
 #logo {
   font-family: Inter, sans-serif;
   font-size: 20px;
@@ -22,7 +52,7 @@
 
 #bar i {
   font-size: 20px;
-  color: #acb7c3;
+  color:black;
 }
 
 .subHead {
@@ -416,9 +446,9 @@ ul.font-icons {
     transition: transform 2s;
   }
 
-  .center:hover {
+  /* .center:hover {
     transform: rotate(-360deg);
-  }
+  } */
 
   .disable {
     display: none;
