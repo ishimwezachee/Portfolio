@@ -14,6 +14,7 @@ Desktop view                                      |  Mobile Header view
 
 - HTML 
 - CSS
+- JS 
 
 ## Project link
 
