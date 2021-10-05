@@ -31,19 +31,30 @@
     <header id="head-nav">
       <div class="mobile-nav">
         <h1 id="logo">
-          <a href=""> Welcome </a>
+          <a href="#"> Welcome </a>
         </h1>
         <nav class="navigation">
-          <a id="bar" href="">
+          <a id="bar" href="#">
             <i class="far fa-bars"></i>
           </a>
         </nav>
       </div>
       <div class="desktop-nav">
         <ul class="nav-list">
-          <li class="top-nav">Portoflio</li>
-          <li class="top-nav">About</li>
-          <li class="top-nav">Contact</li>
+          <li class="close-menu">
+            <a href="#">
+              <i class="far times"></i>
+            </a>
+          </li>
+          <li class="top-nav">
+            <a class="nav-link" href="#welcome-section"> Portoflio</a>
+          </li>
+          <li class="top-nav">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="top-nav">
+            <a class="nav-link" href="#contacts">Contact</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -254,6 +265,9 @@
           </ul>
         </li>
       </ul>
+    </section>
+
+    <section id="contacts">
       <div class="text-input">
         <div class="glad-text">
           <p id="texts">
@@ -332,5 +346,6 @@
       </div>
       <hr class="blck-line" />
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
