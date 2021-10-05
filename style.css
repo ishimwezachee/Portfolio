@@ -62,6 +62,8 @@ i.far.times.fa-times {
 
 .close-menu {
   text-align: right;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
 }
 
 #logo {
