@@ -3,21 +3,24 @@ const navList = document.querySelector(".nav-list");
 const icon = document.querySelector(".fa-bars");
 const times = document.querySelector(".times");
 const navLink = document.querySelectorAll(".nav-link");
-
-humberg.addEventListener("click", function () {
+function closeNavItems() {
+  navList.classList.replace("column", "nav-list");
+  navList.style.display = "";
+}
+humberg.addEventListener("click", () => {
   navList.classList.replace("nav-list", "column");
   times.classList.add("fa-times");
   navList.style.display = "block";
 });
 
-times.addEventListener("click", function () {
-  navList.style.display = "none";
+times.addEventListener("click", () => {
+  closeNavItems();
 });
 
 navLink.forEach((link) =>
-  link.addEventListener("click", function () {
+  link.addEventListener("click", () => {
     if (window.innerWidth < 600) {
-      navList.style.display = "none";
+      closeNavItems();
     }
   })
 );
