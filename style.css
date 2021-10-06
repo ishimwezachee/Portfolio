@@ -401,23 +401,24 @@ ul.font-icons {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  padding-top: 100px;
+  width: 100%;
+  max-height: 80%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
-  margin: auto;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
@@ -438,7 +439,85 @@ ul.font-icons {
   cursor: pointer;
 }
 
+.card-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: inherit;
+  width: 100%;
+  object-fit: cover;
+}
+
+.track {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #172b4d;
+}
+
+.list-btns {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.list-btn {
+  margin-left: 10px;
+  list-style: none;
+  background-color: #ebf0ee;
+  color: #3a4a42;
+  padding: 8px 12px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.text-describtion {
+  font-family: Inter, sans-serif;
+  color: #344563;
+}
+
+.text-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-link {
+  text-decoration: none;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.fa-arrow-alt-circle-up,
+.fa-github {
+  color: white;
+}
+
+.check2 {
+  display: none;
+}
+
+.check-detail {
+  border: none;
+  border-radius: 4px;
+  background-color: #36b37f;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  margin-left: 2px;
+}
+
 @media only screen and (min-width: 600px) {
+  .modal-content {
+    width: 50%;
+  }
+
   .subHead {
     background-image: url("./images/Header-llustration-desktop@2x.png");
     background-position: center;
@@ -555,6 +634,14 @@ ul.font-icons {
 }
 
 @media only screen and (min-width: 768px) {
+  .check2 {
+    display: flex;
+  }
+
+  .check {
+    display: none;
+  }
+
   .text-input {
     display: flex;
     justify-content: space-evenly;
@@ -596,7 +683,7 @@ ul.font-icons {
   }
 
   .intro {
-    padding: 0 40px;
+    padding: 0 53px;
   }
 
   .about-card {
