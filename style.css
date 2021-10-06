@@ -404,7 +404,7 @@ ul.font-icons {
   display: none;
   position: fixed;
   top: 0;
-  bottom:  0;
+  bottom: 0;
   padding: 80px 0;
   max-height: 82%;
   overflow: auto !important;
@@ -415,7 +415,7 @@ ul.font-icons {
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 20px;
   border-radius: 8px;
   width: 80%;
@@ -423,10 +423,11 @@ ul.font-icons {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  color: black;
+  background-color: #ebecf0;
 }
 
 .close:hover,
