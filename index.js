@@ -25,6 +25,7 @@ humberg.addEventListener('click', () => {
   navList.style.display = 'block';
 });
 
+
 times.addEventListener('click', () => {
   closeNavItems();
 });
@@ -88,7 +89,6 @@ window.addEventListener('DOMContentLoaded', () => {
   </div>
     `;
   modal.innerHTML = project;
-
   const span = document.querySelector('.close');
   span.addEventListener('click', () => {
     modal.style.display = 'none';
