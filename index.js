@@ -2,62 +2,17 @@ const humberg = document.querySelector('.navigation');
 const navList = document.querySelector('.nav-list');
 const times = document.querySelector('.times');
 const navLink = document.querySelectorAll('.nav-link');
-const modal = document.querySelector('.modal')
+const modal = document.querySelector('.modal');
 const btn = document.querySelectorAll('.btn-project');
-const span = document.querySelector('.close');
 
-// 
-
-const projects =[
-  {
-    title:"Keep track of hundreds of components",
-    description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit In architecto aliquam accusantium magnam, amet accusamus maxime sit voluptatum laboriosam, nulla optio, repellendus nobis a esse sunt. Commodi amet in corporis!',
-    image:'images/project-image.png',
-    techinologies:["Ruby on Rails","Css","Javascript"],
-    liveVersion:'https://github.com/ishimwezachee/Portfolio',
-    sourceUrl:'https://github.com/ishimwezachee',
-  },
-  {
-    title:"Keep track of hundreds of components",
-    description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit In architecto aliquam accusantium magnam, amet accusamus maxime sit voluptatum laboriosam, nulla optio, repellendus nobis a esse sunt. Commodi amet in corporis!',
-    image:'images/project-image.png',
-    techinologies:["Ruby on Rails","Css","Javascript"],
-    liveVersion:'https://github.com/ishimwezachee/Portfolio',
-    sourceUrl:'https://github.com/ishimwezachee',
-  },
-  {
-    title:"Keep track of hundreds of components",
-    description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit In architecto aliquam accusantium magnam, amet accusamus maxime sit voluptatum laboriosam, nulla optio, repellendus nobis a esse sunt. Commodi amet in corporis!',
-    image:'images/project-image.png',
-    techinologies:["Ruby on Rails","Css","Javascript"],
-    liveVersion:'https://github.com/ishimwezachee/Portfolio',
-    sourceUrl:'https://github.com/ishimwezachee',
-  },
-  {
-    title:"Keep track of hundreds of components",
-    description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit In architecto aliquam accusantium magnam, amet accusamus maxime sit voluptatum laboriosam, nulla optio, repellendus nobis a esse sunt. Commodi amet in corporis!',
-    image:'images/project-image.png',
-    techinologies:["Ruby on Rails","Css","Javascript"],
-    liveVersion:'https://github.com/ishimwezachee/Portfolio',
-    sourceUrl:'https://github.com/ishimwezachee',
-  },
-  {
-    title:"Keep track of hundreds of components",
-    description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit In architecto aliquam accusantium magnam, amet accusamus maxime sit voluptatum laboriosam, nulla optio, repellendus nobis a esse sunt. Commodi amet in corporis!',
-    image:'images/project-image.png',
-    techinologies:["Ruby on Rails","Css","Javascript"],
-    liveVersion:'https://github.com/ishimwezachee/Portfolio',
-    sourceUrl:'https://github.com/ishimwezachee',
-  },
-  {
-    title:"Keep track of hundreds of components",
-    description:' Lorem ipsum dolor sit amet consectetur, adipisicing elit In architecto aliquam accusantium magnam, amet accusamus maxime sit voluptatum laboriosam, nulla optio, repellendus nobis a esse sunt. Commodi amet in corporis!',
-    image:'images/project-image.png',
-    techinologies:["Ruby on Rails","Css","Javascript"],
-    liveVersion:'https://github.com/ishimwezachee/Portfolio',
-    sourceUrl:'https://github.com/ishimwezachee',
-  }
-]
+const modalData = {
+  title: 'Keep track of hundreds of components',
+  description: ' Lorem ipsum dolor sit amet consectetur, adipisicing elit In architecto aliquam accusantium magnam, amet accusamus maxime sit voluptatum laboriosam, nulla optio, repellendus nobis a esse sunt. Commodi amet in corporis!',
+  image: 'images/project-image.png',
+  techinologies: ['Ruby on Rails', 'Css', 'Javascript'],
+  liveVersion: 'https://github.com/ishimwezachee/Portfolio',
+  sourceUrl: 'https://github.com/ishimwezachee',
+};
 
 function closeNavItems() {
   navList.classList.replace('column', 'nav-list');
@@ -81,65 +36,66 @@ navLink.forEach((link) => {
   });
 });
 
-
-btn.forEach((button,index)=>{
-  button.addEventListener('click',function(){
-    modal.style.display ="block"
-  })
-})
-
-
-window.addEventListener('DOMContentLoaded', (event) => {
-  modal.innerHTML = `
-  <div class="modal-content">
-   <span class="close">&times;</span>
-  <div class="modal-container">
-    <div class="pop-card">
-        <img class="card-image" src=${projects.image} alt="img-modal" />
-      <div class="text-btns">
-        <p class="track">${projects.title}</p>
-        <div class="check2">
-        <button class='check-detail'><a href=${projects.liveVersion} class="social-link">
-        See Live <span><i class="far fa-arrow-alt-circle-up"></i></span>
-      </a></button>
-      <button class='check-detail'>
-        <a href=${projects.sourceUrl} class="social-link">
-          See source <span<i class="fab fa-github"></i></i></span>
-        </a>
-      </button>
-        </div>
-      </div>
-      <ul class="list-btns">
-          <li class="list-btn">${projects.techinologies[0]}</li>
-          <li class="list-btn">${projects.techinologies[1]}</li>
-          <li class="list-btn">${projects.techinologies[2]}</li>
-      </ul>
-      <p class="text-describtion">${projects.description}</p>
-      <div class="check">
-      <button class='check-detail'><a href=${projects.liveVersion} class="social-link">
-      See Live <span><i class="far fa-arrow-alt-circle-up"></i></span>
-    </a></button>
-    <button class='check-detail'>
-      <a href=${projects.sourceUrl} class="social-link">
-        See source <span<i class="fab fa-github"></i></i></span>
-      </a>
-    </button>
-      </div>
-    </div>
-</div>
-</div>
-  `
-  let span = document.querySelector('.close');
- span.addEventListener('click',function(){
-  modal.style.display = "none";
- });
+btn.forEach((button) => {
+  button.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
 });
 
+window.addEventListener('DOMContentLoaded', () => {
+  let project = `
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-container">
+      <div class="pop-card">
+          <img class="card-image" src=${modalData.image} alt="img-modal" />
+        <div class="text-btns">
+          <p class="track">${modalData.title}</p>
+          <div class="check2">
+          <button class='check-detail'><a href=${modalData.liveVersion} class="social-link">
+          See Live <span><i class="far fa-arrow-alt-circle-up"></i></span>
+        </a></button>
+        <button class='check-detail'>
+          <a href=${modalData.sourceUrl} class="social-link">
+            See source <span<i class="fab fa-github"></i></i></span>
+          </a>
+        </button>
+          </div>
+        </div>
+        <ul class="list-btns">
+        `;
 
-window.addEventListener('click',function(event){
-  if (event.target == modal) {
-        modal.style.display = "none";
-      }
-})
+  modalData.techinologies.forEach((language) => {
+    project += `<li class="list-btn">${language}</li>`;
+  });
 
+  project += `
+          </ul>
+          <p class="text-describtion">${modalData.description}</p>
+          <div class="check">
+          <button class='check-detail'><a href=${modalData.liveVersion} class="social-link">
+          See Live <span><i class="far fa-arrow-alt-circle-up"></i></span>
+        </a></button>
+        <button class='check-detail'>
+          <a href=${modalData.sourceUrl} class="social-link">
+            See source <span<i class="fab fa-github"></i></i></span>
+          </a>
+        </button>
+          </div>
+        </div>
+    </div>
+  </div>
+    `;
+  modal.innerHTML = project;
 
+  const span = document.querySelector('.close');
+  span.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
