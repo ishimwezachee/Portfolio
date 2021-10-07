@@ -511,7 +511,13 @@ ul.font-icons {
   margin-left: 2px;
 }
 
-
+.Error_msg {
+  color: red;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  display: none;
+} 
 
 @media only screen and (min-width: 600px) {
   .modal-content {
