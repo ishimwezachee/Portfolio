@@ -4,6 +4,9 @@ const times = document.querySelector('.times');
 const navLink = document.querySelectorAll('.nav-link');
 const modal = document.querySelector('.modal');
 const btn = document.querySelectorAll('.btn-project');
+const contactMeForm = document.querySelector('#contact-me-form');
+const { email } = contactMeForm.elements;
+const Error = document.querySelector('.Error_msg');
 
 const data = [
   {
@@ -141,6 +144,15 @@ window.addEventListener('DOMContentLoaded', () => {
         });
       }
     });
+  });
+
+  contactMeForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (email.value === email.value.toLowerCase()) {
+      event.target.submit();
+    } else {
+      Error.style.display = 'block';
+    }
   });
 });
 
