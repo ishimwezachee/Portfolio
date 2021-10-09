@@ -6,7 +6,7 @@ const modal = document.querySelector('.modal');
 const btn = document.querySelectorAll('.btn-project');
 const contactMeForm = document.querySelector('#contact-me-form');
 const { email } = contactMeForm.elements;
-const Error = document.querySelector('.Error_msg');
+const Error = document.querySelector('.Error_ms');
 
 const data = [
   {
